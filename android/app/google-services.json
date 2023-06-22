@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760992522879",
+    "project_id": "lojaflutter-e86b2",
+    "storage_bucket": "lojaflutter-e86b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760992522879:android:f1ab4300a9217a44a2954a",
+        "android_client_info": {
+          "package_name": "br.com.wrc.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760992522879-1qd5daotoahkmrqgd3ojqt6i81e4sl7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC35zoHqUwBU_L1F2ark5WzeMMv6Dc741E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760992522879-1qd5daotoahkmrqgd3ojqt6i81e4sl7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
