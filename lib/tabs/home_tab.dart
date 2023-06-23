@@ -35,7 +35,9 @@ class HomeTab extends StatelessWidget {
                 centerTitle: true,
               ),
             ),
-            FutureBuilder<QuerySnapshot>(future: FirebaseFirestore.instance.collection("home").orderBy("pos").get(),
+            FutureBuilder<QuerySnapshot>(
+            future: FirebaseFirestore.instance.collection("home").orderBy("pos").get(),
+            
              builder: (context, snapshot){
              if (!snapshot.hasData){
              return SliverToBoxAdapter(
@@ -63,8 +65,8 @@ class HomeTab extends StatelessWidget {
               ),
               gridDelegate: SliverQuiltedGridDelegate(
                 crossAxisCount: 2,
-                mainAxisSpacing: 1,
-                crossAxisSpacing: 1,
+                mainAxisSpacing: 2,
+                crossAxisSpacing: 2,
                 repeatPattern: QuiltedGridRepeatPattern.inverted,
                 pattern: snapshot.data!.docs.map((doc){
                   return QuiltedGridTile(doc['x'], doc['y']);
