@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:loja_virtual/screens/category_screens.dart';
 
 class CategotyTile extends StatelessWidget {
  const CategotyTile(this.snapshot, {super.key});
@@ -26,7 +27,8 @@ class CategotyTile extends StatelessWidget {
       trailing: const Icon(Icons.keyboard_arrow_right),
       onTap: () {
         //vai para a tela CategoryScreen passando o snapshot (documento)
-        
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => CategoryScreen(snapshot)));
         
       },
     );

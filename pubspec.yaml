@@ -42,7 +42,9 @@ dependencies:
   transparent_image: ^2.0.1
   firebase_core: ^2.14.0
   url_launcher: ^6.0.3
-  firebase_auth: 4.6.3
+  firebase_auth: ^4.6.3
+  carousel_slider: ^4.2.1
+
 
 dev_dependencies:
   flutter_test:
