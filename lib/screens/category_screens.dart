@@ -13,6 +13,7 @@ class CategoryScreen extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).primaryColor,
           title: Text(snapshot.get('title')),
           centerTitle: true,
           bottom: const TabBar(indicatorColor: Colors.white, tabs: [
@@ -50,9 +51,8 @@ class CategoryScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       ProductData data =
                           ProductData.fromDocument(snapshot.data!.docs[index]);
-                      data.category = this
-                          .snapshot
-                          .id; //passando a catergoria do documento(produto)
+                      data.category = this.snapshot.id; //passando a catergoria do documento(produto)
+                      
                       return ProductTile(
                         type: 'grid',
                         product: data,
