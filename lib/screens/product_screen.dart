@@ -34,6 +34,7 @@ class _ProductScreenState extends State<ProductScreen> {
         backgroundColor: primaryColor,
         title: Text(product.title!),
         centerTitle: true,
+
       ),
       
       body: ListView(

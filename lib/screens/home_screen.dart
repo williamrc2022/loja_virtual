@@ -27,10 +27,13 @@ class HomeScreen extends StatelessWidget {
         Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).primaryColor,
-            title: const Text("Produtos"),
+            title: const Text("Produtos",
+            style: TextStyle(color: Colors.white),),
             centerTitle: true,
+
+
             ),
-            drawer: CustomDrawer(_pageController),
+            drawer: CustomDrawer(_pageController,),
             body: const ProductsTab(),
             floatingActionButton: const CartButton(),
 
